@@ -6,7 +6,7 @@ import phone from "../../assets/Mockup.png";
 const Professional = () => {
   return (
     <>
-      <div className="bg-black  min-w-full min-h-full  overflow-hidden flex  flex-col  md:flex-row">
+      <div className="bg-black  h-auto w-full  overflow-hidden flex  flex-col  md:flex-row">
         {/*     left side  */}
 
         <div className="p-10 md:p-12 lg:p-20 mb-0 md:mb-0 lg:mb-32">

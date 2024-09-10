@@ -7,7 +7,7 @@ import Searchphase from "./Searchphase";
 const Services = () => {
   return (
     // Apply relative positioning and z-index here
-    <div className=" bg-white relative z-10 top-[-200px] w-full  min-h-max ">
+    <div className=" bg-white relative z-10 top-[-180px] md:top-[-190px] lg:top-[-200px] w-full  h-auto">
       <div className=" ">
         <Searchphase />
       </div>

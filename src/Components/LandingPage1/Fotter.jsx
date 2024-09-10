@@ -5,6 +5,7 @@ import {
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Fotter = () => {
   return (
@@ -19,10 +20,18 @@ const Fotter = () => {
           <div>
             <p className="text-gray-500 text-[17px]">Company</p>
             <ul className="flex flex-col gap-3 mt-4">
-              <li>About us</li>
-              <li>Contact us</li>
-              <li>Careers</li>
-              <li>Press</li>
+              <li>
+                <NavLink to="/about">About us</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact us</NavLink>
+              </li>
+              <li>
+                <NavLink to="/careers">Careers</NavLink>
+              </li>
+              <li>
+                <NavLink to="/press">Press</NavLink>
+              </li>
             </ul>
           </div>
 
@@ -30,11 +39,21 @@ const Fotter = () => {
           <div>
             <p className="text-gray-500 text-[17px]">Product</p>
             <ul className="flex flex-col gap-3 mt-4">
-              <li>Features</li>
-              <li>Pricing</li>
-              <li>News</li>
-              <li>Help desk</li>
-              <li>Support</li>
+              <li>
+                <NavLink to="#features">Features</NavLink>
+              </li>
+              <li>
+                <NavLink to="#pricing">Pricing</NavLink>
+              </li>
+              <li>
+                <NavLink to="#news">News</NavLink>
+              </li>
+              <li>
+                <NavLink to="#help-desk">Help desk</NavLink>
+              </li>
+              <li>
+                <NavLink to="#support">Support</NavLink>
+              </li>
             </ul>
           </div>
 
@@ -42,10 +61,22 @@ const Fotter = () => {
           <div>
             <p className="text-gray-500 text-[17px]">Services</p>
             <ul className="flex flex-col gap-3 mt-4">
-              <li>Digital Marketing</li>
-              <li>Content Writing</li>
-              <li>SEO for Business</li>
-              <li>UI Design</li>
+              <li>
+                <NavLink to="#services/digital-marketing">
+                  Digital Marketing
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="#services/#content-writing">
+                  Content Writing
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="#ervices/seo">SEO for Business</NavLink>
+              </li>
+              <li>
+                <NavLink to="#services/ui-design">UI Design</NavLink>
+              </li>
             </ul>
           </div>
 
@@ -53,15 +84,26 @@ const Fotter = () => {
           <div>
             <p className="text-gray-500 text-[17px]">Legal</p>
             <ul className="flex flex-col gap-3 mt-4">
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
-              <li>Return Policy</li>
+              <li>
+                <NavLink to="#privacy-policy">Privacy Policy</NavLink>
+              </li>
+              <li>
+                <NavLink to="#terms">Terms & Conditions</NavLink>
+              </li>
+              <li>
+                <NavLink to="#return-policy">Return Policy</NavLink>
+              </li>
             </ul>
           </div>
 
           {/* Contact Section */}
           <div>
             <p className="text-gray-500 text-[17px]">Contact us</p>
+            <ul className="flex flex-col gap-3 mt-4">
+              <li>
+                <NavLink to="/contact">Get in Touch</NavLink>
+              </li>
+            </ul>
           </div>
         </div>
 
