@@ -3,18 +3,18 @@ import blueBike from "../../assets/Preview.png";
 
 const BikeShell = () => {
   return (
-    <div className="w-full p-8 md:p-20 mt-20 md:mt-40 h-auto flex flex-col bg-gray-50">
+    <div className="w-full p-10 md:p-16 lg:p-24 h-auto px-10 md:px-20 flex flex-col bg-gray-50">
       {/* Content */}
       <div className="text-center">
         <h1 className="text-2xl md:text-3xl font-semibold">Bike for Sale</h1>
-        <p className="text-base md:text-[22px] text-gray-500 mx-4 md:mx-40 my-4 md:my-10">
+        <p className="text-base text-[19px] md:text-[22px] text-gray-500 mx-4 md:mx-40 lg:mx-52 my-4 md:my-5">
           With lots of unique blocks, you can easily build a page without
           coding. Build your next landing page.
         </p>
       </div>
 
       {/* Boxes */}
-      <div className="flex flex-col md:flex-row flex-wrap gap-5 md:gap-6 justify-center">
+      <div className="flex mt-5 md:mt-8 flex-col md:flex-row flex-wrap gap-5 md:gap-6 justify-center">
         {[...Array(8)].map((_, index) => (
           <div
             key={index}

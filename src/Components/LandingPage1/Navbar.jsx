@@ -1,39 +1,52 @@
-import React from "react";
-import logo from "../../assets/Asset 5 3.png";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../../assets/Asset 5 3.png";
 
 const Navbar = () => {
+  const [state, setState] = useState(false);
+
+  const popUp = () => {
+    setState(!state);
+  };
+
   return (
-    <div
-      /*  style={{ backgroundColor: "#262D36" }} */
-      className="w-full bg-black h-auto flex flex-col md:flex-row justify-between p-5 md:px-14 lg:px-28"
-    >
-      {/*   logo */}
-      <div>
-        <img src={logo} alt="" />
+    <div className="w-full bg-black h-auto flex flex-col md:flex-row justify-between items-center p-5 md:px-14 lg:px-28">
+      {/* Logo */}
+      <div className="mb-4 md:mb-0">
+        <img src={logo} alt="Logo" />
       </div>
 
-      <div className=" flex flex-col  justify-between md:flex-row  gap-5 md:gap-8 ">
-        <ul className="flex justify-between text-white  gap-5 md:gap-8 mt-3">
+      {/* Navigation Links */}
+      <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-center">
+        <ul className="flex flex-col md:flex-row text-white gap-4 md:gap-8 text-center">
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink exact to="/" activeClassName="text-blue-400">
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/service"> Service</NavLink>
+            <NavLink to="/service" activeClassName="text-blue-400">
+              Service
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about"> About</NavLink>
+            <NavLink to="/about" activeClassName="text-blue-400">
+              About
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" activeClassName="text-blue-400">
+              Contact
+            </NavLink>
           </li>
         </ul>
 
-        <div className=" text-center text-white p-3 bg-blue-600 w-full rounded md:w-48 ">
-          <NavLink to="/booknow">Book Now</NavLink>
+        {/* Book Now Button */}
+        <div className="cursor-pointer text-center text-white p-3 bg-blue-600 w-full md:w-48 rounded mt-4 md:mt-0">
+          <NavLink to="/booknow" activeClassName="text-blue-400">
+            Book now
+          </NavLink>
         </div>
-
-
       </div>
     </div>
   );

@@ -70,10 +70,22 @@ const Fotter = () => {
 
         {/* Social media icons */}
         <div className="mt-6 flex justify-center md:justify-end gap-4">
-          <FaTwitter className="w-6 h-6 text-white hover:text-blue-600" />
-          <FaFacebook className="w-6 h-6 text-white hover:text-blue-600" />
-          <FaInstagramSquare className="w-6 h-6 text-white hover:text-blue-600" />
-          <FaLinkedin className="w-6 h-6 text-white hover:text-blue-600" />
+          <FaTwitter
+            onClick={() => window.open("https://twitter.com", "_blank")}
+            className="w-6 h-6 text-white hover:text-blue-600 cursor-pointer"
+          />
+          <FaFacebook
+            onClick={() => window.open("https://facebook.com", "_blank")}
+            className="w-6 h-6 text-white hover:text-blue-600 cursor-pointer"
+          />
+          <FaInstagramSquare
+            onClick={() => window.open("https://instagram.com", "_blank")}
+            className="w-6 h-6 text-white hover:text-blue-600 cursor-pointer"
+          />
+          <FaLinkedin
+            onClick={() => window.open("https://linkedin.com", "_blank")}
+            className="w-6 h-6 text-white hover:text-blue-600 cursor-pointer"
+          />
         </div>
       </div>
     </>

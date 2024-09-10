@@ -6,13 +6,13 @@ import { GoStarFill } from "react-icons/go";
 
 const AboutUs = () => {
   return (
-    <div className="w-full h-auto flex flex-col p-10 md:p-24">
+    <div className="w-full h-auto flex flex-col p-10 md:p-16 lg:p-20">
       {/* Content */}
       <div className="text-center mt-3 md:mt-8">
         <h1 className="text-3xl font-semibold">What people say about us</h1>
-        <p className="mx-5 md:mx-36 lg:mx-72 text-gray-500 my-8">
+        <p className="mx-5 md:mx-52 lg:mx-60 text-gray-500 my-5 md:my-6">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
-          ratione tempore labore magnam, assumenda sunt.
+          ratione tempore labore magnam, assumenda sunt Lorem, ipsum dolor..
         </p>
       </div>
 

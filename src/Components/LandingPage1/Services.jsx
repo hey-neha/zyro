@@ -7,18 +7,18 @@ import Searchphase from "./Searchphase";
 const Services = () => {
   return (
     // Apply relative positioning and z-index here
-    <div className=" bg-white">
-      <div className="">
+    <div className=" bg-white relative z-10 top-[-200px] w-full  min-h-max ">
+      <div className=" ">
         <Searchphase />
       </div>
-      <div className="w-full h-auto flex flex-col pt-5 md:pt-32 px-5 md:px-20">
+      <div className="w-full h-auto flex flex-col  px-5 md:px-20">
         {/*   content ----------------------*/}
 
         <div className="text-center mt-3 md:mt-32 lg:mt-36">
           <h1 className="text-3xl font-semibold">Services we offer for you</h1>
-          <p className="mx-10  md:mx-40 lg:mx-72  my-5 text-[18px] text-gray-500">
+          <p className="mx-5  md:mx-40 lg:mx-72  my-5 text-[18px] text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            explicabo, delectus, neque asperiores at, voluptatibus .
+            explicabo, delectus, neque asperiores at.
           </p>
         </div>
 
