@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoLocation } from "react-icons/io5";
 import { TiArrowSortedDown } from "react-icons/ti";
-// import { MdDateRange } from "react-icons/md";
 
 const Searchphase = () => {
   const [isLocationDropdownOpen, setIsLocationDropdownOpen] = useState(false);
@@ -11,8 +10,8 @@ const Searchphase = () => {
   };
 
   return (
-    <div className="w-full flex justify-center  relative top-[-40px] md:top-[-45px] z-10">
-      <div className="w-full md:w-3/4 lg:w-1/2 bg-white shadow-2xl rounded-xl flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6 p-4">
+    <div className="w-full flex justify-center relative top-[-40px] md:top-[-20px] lg:top-[-12px] xl:top-[-10px] z-10">
+      <div className="w-full md:w-4/5 lg:w-3/5 bg-white shadow-2xl rounded-xl flex flex-col md:flex-row justify-between items-center gap-4 md:gap-3 lg:gap-4 p-4 md:p-6">
         {/* Location Dropdown */}
         <div
           className="relative w-full md:w-1/3"
@@ -25,6 +24,7 @@ const Searchphase = () => {
             </span>
             <TiArrowSortedDown className="text-gray-500" />
           </div>
+
           {isLocationDropdownOpen && (
             <div className="absolute left-0 right-0 mt-2 p-3 bg-white border rounded-xl shadow-lg z-20">
               <ul className="space-y-2">
@@ -52,7 +52,6 @@ const Searchphase = () => {
         <div className="relative w-full md:w-1/3">
           <div className="flex items-center justify-between p-3 border rounded-xl hover:cursor-pointer hover:shadow-md transition-all duration-200 ease-in-out">
             <span className="flex items-center gap-2">
-              {/* <MdDateRange className="text-blue-500" /> */}
               <input
                 type="date"
                 className="w-full outline-none text-gray-700"
