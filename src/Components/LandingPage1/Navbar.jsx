@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-black h-auto flex flex-col md:flex-row justify-between p-5 md:px-14 lg:px-16 xl:px-20 2xl:px-28">
       {/* Logo */}
-      <div className="flex justify-between items-center w-full md:w-auto">
-        <img src={logo} alt="Logo" className="w-20 md:w-24 lg:w-28 " />
+      <div className="flex justify-between items-center w-full md:w-auto lg:ml-9 xl:ml-10 ">
+        <img src={logo} alt="Logo" className="w-20 md:w-24  lg:w-28 xl:w-32   " />
         {/* Hamburger Menu for Mobile */}
         <div className="md:hidden">
           <button

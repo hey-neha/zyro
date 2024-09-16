@@ -20,7 +20,7 @@ const Professional = () => {
             DOWNLOAD OUR APP
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 mt-5 md:mt-7 mr-36 md:mr-24 lg:mr-40 xl:mr-60 2xl:mr-80">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 md:gap-8 mt-5 md:mt-7 mr-36 md:mr-24 lg:mr-40 xl:mr-56 2xl:mr-80">
             {/* App Store Button */}
             <img
               className="w-28 sm:w-32 md:w-32 lg:w-36 xl:w-44 h-auto object-contain"
